@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-emerald-deep: #063124;
+    --color-gold: #c5a059;
+    --color-gold-light: #e6c888;
+    --color-sand: #f5f0ea;
+    --color-charcoal: #0e1113;
+    --color-terracotta: #c45d3e;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #ede7de;
+    background-color: #0b0e10;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-display-luxury {
+  font-family: 'Cinzel', 'Cormorant Garamond', serif;
+}
+
+.font-arabic-luxury {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+}
+
+/* Subtle Moroccan geometric background pattern */
+.bg-moroccan-pattern {
+  background-color: #0c0f12;
+  background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(6, 49, 36, 0.25) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+/* Subtle star octagram watermark */
+.bg-zellige-subtle {
+  background-image: radial-gradient(circle at center, rgba(197, 160, 89, 0.04) 0%, transparent 70%);
+}
+
+/* Custom delicate gold scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0f11;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2c2e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

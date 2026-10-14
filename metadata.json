@@ -1,0 +1,6 @@
+{
+  "name": "Riad SDC — Luxury Riad & Spa Fès Medina",
+  "description": "Boutique riad d'exception et spa au cœur de la médina historique de Fès. Suites prestigieuses, zellige séculaire, gastronomie fassie et hospitalité marocaine raffinée.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
